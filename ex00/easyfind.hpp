@@ -16,10 +16,10 @@ class VectorNotFound : public std::exception
 };
 
 template<typename T>
-int *easyfind(T &vector, int num)
+int *easyfind(T &container, int num)
 {
     typename T::iterator it;
-    if((it = std::find(vector.begin(), vector.end(), num)) == vector.end())
+    if((it = std::find(container.begin(), container.end(), num)) == container.end())
 		throw VectorNotFound();
 	return (&(*it));
 }
