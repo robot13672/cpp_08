@@ -6,7 +6,7 @@ Span::~Span() { numbers.clear(); };
 
 int Span::longestSpan()
 {
-    if(N < 2)
+    if (N < 2)
         std::cout << "Impossible to find a span!" << std::endl;
     {
         std::vector<int> res;
@@ -18,18 +18,18 @@ int Span::longestSpan()
 
 int Span::shortestSpan()
 {
-    if(numbers.size() < 2)
+    if (numbers.size() < 2)
         std::cout << "Impossible to find a span!" << std::endl;
     int shortest;
     {
         std::vector<int> res;
         res = this->numbers;
         std::sort(res.begin(), res.end());
-        shortest = numbers[1] - numbers[0];
-        for(int i = 2; i < numbers.size(); i++ )
+        shortest = res[1] - res[0];
+        for (int i = 2; i < res.size(); i++)
         {
-            if(numbers[i] - numbers[i - 1] < shortest)
-                shortest = numbers[i] - numbers[i - 1];
+            if (res[i] - res[i - 1] < shortest)
+                shortest = res[i] - res[i - 1];
         }
     }
     return shortest;
@@ -37,7 +37,7 @@ int Span::shortestSpan()
 
 void Span::addNumber(int number)
 {
-    if(numbers.size() + 1 > N)
+    if (numbers.size() + 1 > N)
         throw std::out_of_range("Adding too many numbers, exceeds Span limit");
     numbers.push_back(number);
 }
