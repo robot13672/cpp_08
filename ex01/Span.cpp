@@ -26,7 +26,7 @@ int Span::shortestSpan()
         res = this->numbers;
         std::sort(res.begin(), res.end());
         shortest = res[1] - res[0];
-        for (int i = 2; i < res.size(); i++)
+        for (long unsigned int i = 2; i < res.size(); i++)
         {
             if (res[i] - res[i - 1] < shortest)
                 shortest = res[i] - res[i - 1];

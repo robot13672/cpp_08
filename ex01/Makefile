@@ -1,7 +1,7 @@
 NAME = my_program
 
 CXX = g++
-CXXFLAGS = -std=c++17 -g
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp Span.cpp
 OBJS = $(SRCS:.cpp=.o)
