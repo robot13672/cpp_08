@@ -1,9 +1,0 @@
-{
-    "makefile.launchConfigurations": [
-        {
-            "cwd": "/home/ikhristi/core/cpp_08/ex01",
-            "binaryPath": "/home/ikhristi/core/cpp_08/ex01/my_program",
-            "binaryArgs": []
-        }
-    ]
-}

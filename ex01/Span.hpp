@@ -12,12 +12,11 @@ class Span
 {
     private:
         unsigned int N;
+        std::vector<int> numbers;
     public:
-        std::vector<int> numbers;//change back to private
         Span(int n);
         ~Span();
         void addNumber(int number);
-        //Add many numbers
         int shortestSpan();
         int longestSpan();
 };
