@@ -1,5 +1,27 @@
-#include "MutantStack.hpp"
 #include <iostream>
+#include "MutantStack.hpp"
+
+// int main()
+// {
+//     MutantStack<int> stack1;
+//     stack1.push(1);
+//     stack1.push(2);
+//     stack1.push(3);
+
+
+//     MutantStack<int> stack2(stack1);
+
+//     MutantStack<int> stack3;
+//     stack3 = stack1;
+
+//     for (MutantStack<int>::iterator it = stack1.begin(); it != stack1.end(); ++it) 
+//     {
+//         std::cout << *it << " ";
+//     }
+//     std::cout << std::endl;
+
+//     return 0;
+// }
 
 int main()
 {
@@ -19,8 +41,8 @@ int main()
     --it;
     while (it != ite)
     {
-    std::cout << *it << std::endl;
-    ++it;
+        std::cout << *it << std::endl;
+        ++it;
     }
     std::stack<int> s(mstack);
     return 0;
